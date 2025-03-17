@@ -88,11 +88,6 @@ html, body {
     padding: 15px;
     width: 100%;
     text-align: center;
-    border-bottom
-}
-
-.mobile-nav a:hover {
-    background: #9B51E0;
 }
 
 .close-btn {
