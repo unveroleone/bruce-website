@@ -344,6 +344,50 @@ body {
     color: #8033C7;
 }
 
+.deep-water {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #6a0dad, #4b0082, #2a0036);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.deep-water h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.deep-water h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.deep-water p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.qrcode {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 8px;
+    background: white;
+    padding: 10px;
+}
+
+
+.medias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
