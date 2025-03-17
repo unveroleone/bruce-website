@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 body {
@@ -13,7 +17,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -48,6 +52,7 @@ body {
     font-weight: 500;
     padding: 10px 15px;
     border-radius: 5px;
+    font-size: 17px;
 }
 
 .nav-links a:hover {
@@ -108,7 +113,7 @@ body {
 
 
 .logo {
-    height: 50px;
+    width: 100%;
 }
 
 .hero {
@@ -342,9 +347,77 @@ body {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
+       
     }
-    
+
     .nav-links {
         display: none;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background: #111;
+        z-index: 1000;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .mobile-nav.active {
+        right: 0;
+    }
+}
+
+/* 🛠 Fix für Hero-Bereich */
+@media (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .responsive-img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+/* 🛠 Fix für News Section */
+@media (max-width: 768px) {
+    .news-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 100%;
+    }
+
+    .news-item {
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
     }
 }
