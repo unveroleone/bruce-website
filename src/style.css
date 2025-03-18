@@ -52,12 +52,32 @@ body {
     font-weight: 500;
     padding: 10px 15px;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .nav-links a:hover {
     color: #9B51E0;
+    border-bottom: 2px solid #9B51E0;
 }
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #9B51E0;
+}
+
+.nav-link.active {
+    color: #9B51E0;
+    font-weight: bold;
+    border-bottom: 2px solid #9B51E0;
+}
+
+
 
 .hamburger {
     display: none;
@@ -346,7 +366,7 @@ body {
 .deep-water {
     padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #6a0dad, #4b0082, #2a0036);
+    background: linear-gradient(135deg, #3d0664, #4b0082, #2a0036);
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
@@ -386,6 +406,135 @@ body {
     margin-top: 20px;
 }
 
+.info-box {
+    border: 2px solid #9B51E0;
+    background: rgba(155, 81, 224, 0.1);
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(155, 81, 224, 0.3);
+}
+
+.info-box ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+.info-box h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.version-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.version-selection label {
+    background: none;
+    border: 2px solid #9B51E0;
+    color: #9B51E0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.version-selection input[type="radio"] {
+    display: none;
+}
+
+.version-selection input[type="radio"]:checked + label {
+    background: #9B51E0;
+    color: white;
+}
+
+
+.device-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.device-button {
+    background: none;
+    border: 2px solid #9B51E0;
+    color: #9B51E0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.device-button:hover,
+.device-button.active {
+    background: #9B51E0;
+    color: white;
+}
+
+.device-list {
+    display: none;
+    margin-top: 10px;
+}
+
+.device-list input[type="radio"] {
+    display: none;
+}
+
+.device-list label {
+    display: inline-block;
+    background: none;
+    border: 2px solid #9B51E0;
+    color: #9B51E0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.device-list input[type="radio"]:checked + label {
+    background: #9B51E0;
+    color: white;
+}
+esp-web-install-button button{
+    background: #9B51E0;
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid #9B51E0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(155, 81, 224, 0.5);
+}
+
+esp-web-install-button button:hover {
+    background: #8033C7;
+    border-color: #8033C7;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(155, 81, 224, 0.7);
+}
+
+.button-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 
 @media (max-width: 768px) {
     .hamburger {
@@ -410,6 +559,15 @@ body {
 
     .mobile-nav.active {
         right: 0;
+    }
+    .device-selection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .device-button {
+        width: 80%;
+        text-align: center;
     }
 }
 
