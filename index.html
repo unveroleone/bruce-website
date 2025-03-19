@@ -42,22 +42,45 @@
         </div>
     </header>
     
-
-    <div class="hero">
-        <div class="fade-overlay"></div>
-
-        <img src="images/bruce_devices_lp.png" class="responsive-img" alt="Bruce Devices">
-
-        <div class="hero-content">
-            <h1>Bruce Firmware</h1>
-            <p>The powerful open-source ESP32 firmware designed for offensive security and Red Team operations.</p>
-            <div class="cta-buttons">
-                <a href="https://github.com/pr3y/Bruce" target="_blank" class="btn">Explore GitHub</a>
-                <a href="https://bruce.computer/flasher" target="_blank" class="btn-install">Install Now</a>
+    <div class="hero-container">
+        <div class="hero">
+            <div class="fade-overlay"></div>
+            <div class="hero-content">
+                <h1>Bruce Firmware</h1>
+                <p>The powerful open-source ESP32 firmware designed for offensive security and Red Team operations.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/pr3y/Bruce" target="_blank" class="btn">Explore GitHub</a>
+                    <a href="https://bruce.computer/flasher" target="_blank" class="btn-install">Install Now</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="images/m5stick.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="images/cardputer.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/core2.png" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="images/cyd.png" alt="Slide 4">
+            </div>
+            <div class="slide">
+                <img src="images/lilygo.png" alt="Slide 5">
+            </div>
+            <div class="slide">
+                <img src="images/t-embed.png" alt="Slide 6">
+            </div>
+            <div class="slide bruce-pcb">
+                <img src="images/bruce-pcb.png" alt="Slide 7">
             </div>
         </div>
     </div>
-
+    
+    
     <div class="features">
         <div class="container">
             <h1>Why Bruce?</h1>
@@ -95,6 +118,144 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="compatible-devices">
+            <h1>Compatible Devices</h1>
+            <table class="compatibility-table">
+                <thead>
+                    <tr>
+                        <th>Device</th>
+                        <th>CC1101</th>
+                        <th>NRF24</th>
+                        <th>Interpreter</th>
+                        <th>FMRadio</th>
+                        <th>PN532</th>
+                        <th>Mic_SPM1423</th>
+                        <th>BadUSB</th>
+                        <th>RGB Led</th>
+                        <th>Speaker</th>
+                        <th>LITE_MODE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cardputer</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td>NS4168</td>
+                        <td class="fail">❌</td>
+                    </tr>
+                    <tr>
+                        <td>StickCPlus2</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td>Tone</td>
+                        <td class="fail">❌</td>
+                    </tr>
+                    <tr>
+                        <td>StickCPlus 1.1</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td>Tone</td>
+                        <td class="success">✅</td>
+                    </tr>
+                    <tr>
+                        <td>Core</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td>Tone</td>
+                        <td class="fail">❌</td>
+                    </tr>
+                    <tr>
+                        <td>Core2</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                    </tr>
+                    <tr>
+                        <td>CoreSe/SE</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                    </tr>
+                    <tr>
+                        <td>CYD-2432S028</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                    </tr>
+                    <tr>
+                        <td>Lilygo T-Embed CC1101</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="success">✅</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                        <td class="fail">❌</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>For <strong>Wiring Diagrams</strong> look into the <a href="https://github.com/pr3y/Bruce/wiki">Wiki</a>!</h2>
+        </div>
+    </div>
+    <div class="news-container">
+        <div class="faq-container">
+            <h2>Need more help?</h2>
+            <p>Check out our <a href="https://github.com/pr3y/Bruce/wiki/FAQ" target="_blank" rel="noopener noreferrer">FAQ</a>!</p>
+        </div>
+    </div>    
+
+    </div>
     
     <footer class="footer">
         <div class="container">
@@ -102,6 +263,8 @@
                 <a href="https://discord.gg/WJ9XF9czVT">Discord</a>
                 <a href="https://youtube.com/@Bruce-fw">YouTube</a>
                 <a href="https://reddit.com/r/brucefw">Reddit</a>
+                <a href="https://www.instagram.com/bruce_firmware/">Instagram</a>
+                <a href="https://matrix.to/#/#general:matrix.bruce.computer">Matrix.co</a>
             </div>
             <p>© 2025 Bruce Firmware. All Rights Reserved.</p>
             <p>Made by <a href="https://github.com/unveroleone" style="color:#9B51E0; text-decoration: none;">unveroleone</a></p>

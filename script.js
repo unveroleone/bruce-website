@@ -128,7 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     button.style.cursor = "pointer";
                     button.style.boxShadow = "0px 0px 10px rgba(155, 81, 224, 0.5)";
                     
-                    // Hover-Effekt
                     button.addEventListener("mouseenter", () => {
                         button.style.background = "#8033C7";
                         button.style.borderColor = "#8033C7";
@@ -147,3 +146,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500);
     }
 });
+
+
+
