@@ -778,11 +778,6 @@ esp-web-install-button button:hover {
         width: 100%;
     }
 
-    .hero-container {
-        height: auto;
-        height: 100vh;
-    }
-
     .hero-content {
         text-align: center;
         max-width: 100%;
