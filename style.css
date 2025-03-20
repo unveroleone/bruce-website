@@ -842,4 +842,10 @@ esp-web-install-button button:hover {
         min-height: 200px;
         background-size: cover;
     }
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: black;
+    }
 }
