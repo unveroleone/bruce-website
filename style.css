@@ -874,11 +874,6 @@ esp-web-install-button button:hover {
         overflow-x: hidden;
         background-color: black;
     }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     .info-box{
         margin-bottom: 20px;
     }
