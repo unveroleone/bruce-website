@@ -37,6 +37,32 @@ body {
     align-items: center;
 }
 
+.toolkit {
+    position: relative;
+    display: inline-block;
+    cursor: not-allowed;
+}
+
+.toolkit::after {
+    content: "Coming Soon!";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.toolkit:hover::after {
+    opacity: 1;
+}
+
 .logo img {
     height: 50px;
 }
@@ -852,5 +878,8 @@ esp-web-install-button button:hover {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+    .info-box{
+        margin-bottom: 20px;
     }
 }
