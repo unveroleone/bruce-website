@@ -411,7 +411,7 @@ body {
 }
 
 .footer {
-    background-color: #111; /* Dunkler Hintergrund */
+    background-color: #111; 
     padding: 20px 0;
     text-align: center;
 }
@@ -420,7 +420,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Gleichmäßiger Abstand zwischen den Icons */
+    gap: 20px;
     margin-bottom: 15px;
 }
 
@@ -656,10 +656,14 @@ esp-web-install-button button:hover {
     color: white;
 }
 
+.table-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .compatibility-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
     background-color: #1a1a1a;
     border-radius: 8px;
     overflow: hidden;
@@ -670,16 +674,12 @@ esp-web-install-button button:hover {
     padding: 12px;
     text-align: center;
     font-size: 16px;
+    border-bottom: 1px solid #333;
+    color: white;
 }
 
 .compatibility-table th {
     background-color: #292929;
-    color: white;
-}
-
-.compatibility-table td {
-    border-bottom: 1px solid #333;
-    color: white;
 }
 
 .compatibility-table .success {
@@ -698,6 +698,22 @@ esp-web-install-button button:hover {
 
 .compatibility-table tr:hover {
     background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .compatibility-table {
+        min-width: 700px;
+    }
+
+    .compatibility-table th,
+    .compatibility-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
 
 
@@ -736,7 +752,6 @@ esp-web-install-button button:hover {
     }
 }
 
-/* 🛠 Fix für Hero-Bereich */
 @media (max-width: 768px) {
     .hero {
         display: flex;
@@ -745,11 +760,28 @@ esp-web-install-button button:hover {
         text-align: center;
         height: auto;
         padding: 40px 20px;
+        min-height: 300px;
+    }
+
+    .slideshow-container {
+        height: 300px;
+        display: none;
+    }
+
+    .slide {
+        top: 50%;
+        left: 50%;
+        width: 80%;
+    }
+
+    .slide img {
+        width: 100%;
     }
 
     .hero-content {
         text-align: center;
         max-width: 100%;
+        margin-top: 40px;
     }
 
     .hero-content h1 {
@@ -769,9 +801,21 @@ esp-web-install-button button:hover {
         max-width: 90%;
         height: auto;
     }
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .device-table {
+        min-width: 500px;
+    }
+
+    .device-table th, 
+    .device-table td {
+        padding: 8px;
+        font-size: 16px;
+    }
 }
 
-/* 🛠 Fix für News Section */
 @media (max-width: 768px) {
     .news-grid {
         display: flex;
@@ -785,5 +829,17 @@ esp-web-install-button button:hover {
         width: 90%;
         max-width: 400px;
         text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .hero-flasher {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 350px;
+        padding: 40px 20px;
+        min-height: 200px;
+        background-size: cover;
     }
 }
