@@ -1,33 +1,3 @@
-const hamburgerBtn = document.getElementById("hamburger-btn");
-const mobileNav = document.getElementById("mobile-nav");
-const closeBtn = document.getElementById("close-btn");
-
-hamburgerBtn.addEventListener("click", () => {
-    mobileNav.classList.add("active");
-});
-
-closeBtn.addEventListener("click", () => {
-    mobileNav.classList.remove("active");
-});
-
-document.querySelectorAll(".mobile-nav a").forEach(link => {
-    link.addEventListener("click", () => {
-        mobileNav.classList.remove("active");
-    });
-});
-
-
-const navLinks = document.querySelectorAll(".nav-link");
-
-const currentPage = window.location.pathname.split("/").pop();
-
-navLinks.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-    }
-});
-
-
 // Flasher
 function downloadFile(file) {
     const betaSelected = document.getElementById("beta").checked;
@@ -146,6 +116,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500);
     }
 });
-
-
-

@@ -192,13 +192,6 @@ a{
     z-index: 2;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 10;
-    color: white;
-    margin-left: 10px;
-}
-
 .slideshow-container {
     position: relative;
     width: 100%;
@@ -207,14 +200,13 @@ a{
 }
 
 .slide {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
     position: absolute;
     top: 55%;
-    left: 60%;
+    left: 75%;
     transform: translate(-50%, -50%);
     width: 50%;
-    height: auto;
-    opacity: 0;
-    animation: slideAnimation 28s infinite;
     z-index: 4;
 }
 
@@ -223,24 +215,53 @@ a{
     height: auto;
 }
 
-.bruce-pcb{
-    width: 30%;
+
+.slide.active {
+    opacity: 1;
+    z-index: 5;
 }
 
-.slide:nth-child(1) { animation-delay: 0s; }
-.slide:nth-child(2) { animation-delay: 4s; }
-.slide:nth-child(3) { animation-delay: 8s; }
-.slide:nth-child(4) { animation-delay: 12s; }
-.slide:nth-child(5) { animation-delay: 16s; }
-.slide:nth-child(6) { animation-delay: 20s; }
-.slide:nth-child(7) { animation-delay: 24s; }
-
-@keyframes slideAnimation {
-    0%, 100% { opacity: 0; }
-    5% { opacity: 1; } 
-    15% { opacity: 1; }
-    20% { opacity: 0; }
+.slide.active {
+    opacity: 1;
+    z-index: 5;
 }
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slide .prev, .slide .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    user-select: none;
+    z-index: 6;
+    cursor: pointer;
+}
+
+
+.slide .prev {
+    left: 10px;
+}
+
+.slide .next {
+    right: 10px;
+}
+
+
+
 
 .fade-overlay {
     position: absolute;
@@ -678,7 +699,6 @@ esp-web-install-button button:hover {
     margin: 40px auto;
     width: 90%;
 }
-
 .compatible-devices h1 {
     font-size: 28px;
     font-weight: bold;
