@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clearTimeout(autoSlideTimeout);
         autoSlideTimeout = setTimeout(() => {
             startAutoSlide();
-        }, 6000);
+        }, 3000);
     }
 
     showSlide(currentSlide);
