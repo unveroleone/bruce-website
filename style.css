@@ -15,6 +15,10 @@ body {
     color: #FFFFFF;
 }
 
+a{
+    color: #943ee5;
+}
+
 .container {
     width: 90%;
     max-width: 100%;
@@ -726,7 +730,7 @@ esp-web-install-button button:hover {
     background-color: #333;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1200px) and (orientation: portrait) {
     .table-container {
         overflow-x: auto;
     }
@@ -857,7 +861,7 @@ esp-web-install-button button:hover {
         text-align: center;
     }
 }
-@media (max-width: 768px) {
+@media(min-width: 769px) and (max-width: 1200px) and (orientation: portrait) {
     .hero-flasher {
         display: flex;
         flex-direction: column;
