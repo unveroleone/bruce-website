@@ -26,56 +26,67 @@
             </button>
 
             <div class="nav-links">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="https://github.com/pr3y/Bruce" target="_blank" class="nav-link">GitHub</a>
-                <a href="flasher.html" class="btn-inst nav-link">Install</a>
-                <a href="https://discord.gg/WJ9XF9czVT" target="_blank" class="nav-link">Discord</a>
-                <a href="donate.html" class="nav-link">Donate</a>
-                <a href="#" class="nav-link toolkit">Boards</a>
+                <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+                <a href="https://github.com/pr3y/Bruce" target="_blank" class="nav-link" data-i18n="nav_github">GitHub</a>
+                <a href="flasher.html" class="btn-inst nav-link" data-i18n="nav_install">Install</a>
+                <a href="https://discord.gg/WJ9XF9czVT" target="_blank" class="nav-link" data-i18n="nav_discord">Discord</a>
+                <a href="donate.html" class="nav-link" data-i18n="nav_donate">Donate</a>
+                <a href="#" class="nav-link toolkit" data-i18n="nav_boards">Boards</a>
             </div>
-            
+
             <div class="mobile-nav" id="mobile-nav">
                 <button class="close-btn" id="close-btn">✖</button>
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="https://github.com/pr3y/Bruce" target="_blank" class="nav-link">GitHub</a>
-                <a href="flasher.html" class="btn-inst nav-link">Install</a>
-                <a href="https://discord.gg/WJ9XF9czVT" target="_blank" class="nav-link">Discord</a>
-                <a href="donate.html" class="nav-link">Donate</a>
-                <a href="#" class="nav-link toolkit">Boards</a>
-            </div>                
+                <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+                <a href="https://github.com/pr3y/Bruce" target="_blank" class="nav-link" data-i18n="nav_github">GitHub</a>
+                <a href="flasher.html" class="btn-inst nav-link" data-i18n="nav_install">Install</a>
+                <a href="https://discord.gg/WJ9XF9czVT" target="_blank" class="nav-link" data-i18n="nav_discord">Discord</a>
+                <a href="donate.html" class="nav-link" data-i18n="nav_donate">Donate</a>
+                <a href="#" class="nav-link toolkit" data-i18n="nav_boards">Boards</a>
+            </div> 
+            <div class="language-switcher">
+                <button class="current-lang" id="current-lang" data-lang="en">🇬🇧</button>
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <button data-lang="fr" title="Français">🇫🇷</button>
+                    <button data-lang="pt" title="Português">🇵🇹</button>
+                    <button data-lang="es" title="Español">🇪🇸</button>
+                    <button data-lang="it" title="Italiano">🇮🇹</button>
+                    <button data-lang="de" title="Deutsch">🇩🇪</button>
+                    <button data-lang="en" title="English">🇬🇧</button>
+                </div>
+            </div>                        
         </nav>
     </div>
 </header>
 
-    <div class="hero-flasher">
-        <div class="hero-content">
-            <h1>Bruce Web Flasher</h1>
-            <p>Flash your device easily with our online installer!</p>
-            <a href="#flashing" class="btn">Start Flashing</a>
-        </div>
-      </div>
-
-      <div class="info-box">
-        <h2>Flashing Instructions</h2>
-        <p><strong>Connect your device, then select "Flash" and click connect.</strong></p>
-        <p>If asked to put your device into <strong>download mode</strong>, do the following:</p>
-        <ul>
-            <li><strong>Cardputer:</strong> Turn off and unplug from USB, hold the btn G0 (upper right corner), then connect via USB.</li>
-            <li><strong>StickCs:</strong> Turn off, connect one side of a jumper cable into GND and the other side in G0, plug in USB, then remove the jumper cable.</li>
-        </ul>
+<div class="hero-flasher">
+    <div class="hero-content">
+        <h1 data-i18n="hero_title">Bruce Web Flasher</h1>
+        <p data-i18n="hero_description">Flash your device easily with our online installer!</p>
+        <a href="#flashing" class="btn" data-i18n="btn_start_flashing">Start Flashing</a>
     </div>
-    
-    <h3 style="text-align: center;">Select the version:</h3>
-    <div class="version-selection">
-        <input type="radio" name="version" id="latest" value="Last" checked>
-        <label for="latest">Latest Release</label>
-    
-        <input type="radio" name="version" id="beta" value="Beta">
-        <label for="beta">Beta Release</label>
-    </div>
+</div>
 
-    <div id="flashing" class="device-container">
-        <h2>Select your Device</h2>
+<div class="info-box">
+    <h2 data-i18n="flashing_instructions_title">Flashing Instructions</h2>
+    <p data-i18n="flashing_instruction_1"><strong>Connect your device, then select "Flash" and click connect.</strong></p>
+    <p data-i18n="flashing_instruction_2">If asked to put your device into <strong>download mode</strong>, do the following:</p>
+    <ul>
+        <li data-i18n="flashing_instruction_cardputer"><strong>Cardputer:</strong> Turn off and unplug from USB, hold the btn G0 (upper right corner), then connect via USB.</li>
+        <li data-i18n="flashing_instruction_stickcs"><strong>StickCs:</strong> Turn off, connect one side of a jumper cable into GND and the other side in G0, plug in USB, then remove the jumper cable.</li>
+    </ul>
+</div>
+
+<h3 style="text-align: center;" data-i18n="version_select_title">Select the version:</h3>
+<div class="version-selection">
+    <input type="radio" name="version" id="latest" value="Last" checked>
+    <label for="latest" data-i18n="version_latest">Latest Release</label>
+
+    <input type="radio" name="version" id="beta" value="Beta">
+    <label for="beta" data-i18n="version_beta">Beta Release</label>
+</div>
+
+<div id="flashing" class="device-container">
+    <h2 data-i18n="select_device_title">Select your Device</h2>
         <div class="device-selection">
             <button class="device-button" onclick="toggleDeviceCategory('m5stack')">M5Stack</button>
             <button class="device-button" onclick="toggleDeviceCategory('lilygo')">Lilygo</button>
@@ -144,8 +155,10 @@
                     <img src="images/matrix.svg" alt="Matrix">
                 </a>
             </div>
-            <p>Flasher customized by <a href="https://github.com/unveroleone">unveroleone</a>, <a href="https://github.com/bmorcelli">bmorcelli </a>and <a href="https://github.com/pr3y">pr3y</a> — Installer powered by <a href="https://esphome.github.io/esp-web-tools/"></a>ESP Web Tools 🛠️</p>
-            <p class="footer-credit">Site made by <a href="https://github.com/unveroleone" target="_blank">unveroleone</a></p>
+            <p data-i18n="footer_note">Flasher customized by <a href="https://github.com/unveroleone">unveroleone</a>, <a href="https://github.com/bmorcelli">bmorcelli </a>and <a href="https://github.com/pr3y">pr3y</a> — Installer powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools 🛠️</a></p>
+            <p class="footer-credit" data-i18n="footer_credit">Site made by <a href="https://github.com/unveroleone" target="_blank">unveroleone</a></p>
+        </div>
+    </footer>
         </div>
     </footer>
     <script src="script/flasher.js"></script>

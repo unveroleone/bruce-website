@@ -24,72 +24,82 @@
             </button>
 
             <div class="nav-links">
-              <a href="index.html" class="nav-link">Home</a>
-              <a href="https://github.com/pr3y/Bruce" target="_blank" class="nav-link">GitHub</a>
-              <a href="flasher.html" class="btn-inst nav-link">Install</a>
-              <a href="https://discord.gg/WJ9XF9czVT" target="_blank" class="nav-link">Discord</a>
-              <a href="donate.html" class="nav-link">Donate</a>
-              <a href="#" class="nav-link toolkit">Boards</a>
-          </div>
-          
-          <div class="mobile-nav" id="mobile-nav">
-              <button class="close-btn" id="close-btn">✖</button>
-              <a href="index.html" class="nav-link">Home</a>
-              <a href="https://github.com/pr3y/Bruce" target="_blank" class="nav-link">GitHub</a>
-              <a href="flasher.html" class="btn-inst nav-link">Install</a>
-              <a href="https://discord.gg/WJ9XF9czVT" target="_blank" class="nav-link">Discord</a>
-              <a href="donate.html" class="nav-link">Donate</a>
-              <a href="#" class="nav-link toolkit">Boards</a>
-          </div>
-          
-        </nav>
-    </div>
-</header>
-
-    <main class="deep-water">
-        <section class="intro">
-            <h1>Support the Bruce Project</h1>
-            <p>Show your support for Bruce Projects through various donation platforms.</p>
-            <h3>Help true open-source software and hardware thrive!</h3>
-            <p>Every contribution helps push the Bruce Project forward. Join our Discord community for a Donator role!</p>
-        </section>
-
-        <section class="donation-platforms">
-            <h2>Donation Platforms</h2>
-            <div class="medias">
-                <a href="https://www.patreon.com/c/BruceFirmware" class="btn btn-custom">Patreon</a>
-                <a href="https://ko-fi.com/brucefw" class="btn btn-custom">Ko-fi</a>
-                <a href="https://opencollective.com/brucefirmware" class="btn btn-custom">OpenCollective</a>
+                <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+                <a href="https://github.com/pr3y/Bruce" target="_blank" class="nav-link" data-i18n="nav_github">GitHub</a>
+                <a href="flasher.html" class="btn-inst nav-link" data-i18n="nav_install">Install</a>
+                <a href="https://discord.gg/WJ9XF9czVT" target="_blank" class="nav-link" data-i18n="nav_discord">Discord</a>
+                <a href="donate.html" class="nav-link" data-i18n="nav_donate">Donate</a>
+                <a href="#" class="nav-link toolkit" data-i18n="nav_boards">Boards</a>
             </div>
-        </section>
-
-        <section class="crypto-donations">
-            <h2>Cryptocurrency Donations</h2>
-            <div class="medias">
-                <div class="crypto">
-                    <h3>Bitcoin (BTC)</h3>
-                    <a href="bitcoin:bc1ql5uvqda7ndxjkcf7c2kw9vv2rcpmqsjs5xzsq3">
-                        <img class="qrcode" src="images/btc.png" alt="BTC QR Code">
-                    </a>
+            
+            <div class="mobile-nav" id="mobile-nav">
+                <button class="close-btn" id="close-btn">✖</button>
+                <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+                <a href="https://github.com/pr3y/Bruce" target="_blank" class="nav-link" data-i18n="nav_github">GitHub</a>
+                <a href="flasher.html" class="btn-inst nav-link" data-i18n="nav_install">Install</a>
+                <a href="https://discord.gg/WJ9XF9czVT" target="_blank" class="nav-link" data-i18n="nav_discord">Discord</a>
+                <a href="donate.html" class="nav-link" data-i18n="nav_donate">Donate</a>
+                <a href="#" class="nav-link toolkit" data-i18n="nav_boards">Boards</a>
+            </div>
+            <div class="language-switcher">
+                <button class="current-lang" id="current-lang" data-lang="en">🇬🇧</button>
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <button data-lang="fr" title="Français">🇫🇷</button>
+                    <button data-lang="pt" title="Português">🇵🇹</button>
+                    <button data-lang="es" title="Español">🇪🇸</button>
+                    <button data-lang="it" title="Italiano">🇮🇹</button>
+                    <button data-lang="de" title="Deutsch">🇩🇪</button>
+                    <button data-lang="en" title="English">🇬🇧</button>
                 </div>
-                <div class="crypto">
-                    <h3>Monero (XMR)</h3>
-                    <a href="monero:89GEo1iF4CB8ALkXJgwmUCDrRkYgHnQvZgK23Q2AKBPRdXBMXXzmYQ82sSTzFkKnmePcm85153XwZ7xbukmsG4RY5GyAN9r">
-                        <img class="qrcode" src="images/xmr.png" alt="XMR QR Code">
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="contributor-support">
-            <h2>Support the Contributors</h2>
-            <div class="medias">
-                <a href="https://buymeacoffee.com/bmorcelliz" class="btn btn-custom">Donate to bmorcelli</a>
-                <a href="https://github.com/sponsors/bmorcelli" class="btn btn-custom">Sponsor on GitHub</a>
-                <a href="https://www.paypal.com/paypalme/smoochieelee" class="btn btn-custom">Donate to Smoochiee (PCB Design)</a>
-            </div>
-        </section>
-    </main>
+            </div>         
+          </nav>
+      </div>
+  </header>
+  
+  <main class="deep-water">
+      <section class="intro">
+          <h1 data-i18n="donate_heading">Support the Bruce Project</h1>
+          <p data-i18n="donate_intro">Show your support for Bruce Projects through various donation platforms.</p>
+          <h3 data-i18n="donate_subheading">Help true open-source software and hardware thrive!</h3>
+          <p data-i18n="donate_text">Every contribution helps push the Bruce Project forward. Join our Discord community for a Donator role!</p>
+      </section>
+  
+      <section class="donation-platforms">
+          <h2 data-i18n="donation_platforms">Donation Platforms</h2>
+          <div class="medias">
+              <a href="https://www.patreon.com/c/BruceFirmware" class="btn btn-custom" data-i18n="btn_patreon">Patreon</a>
+              <a href="https://ko-fi.com/brucefw" class="btn btn-custom" data-i18n="btn_kofi">Ko-fi</a>
+              <a href="https://opencollective.com/brucefirmware" class="btn btn-custom" data-i18n="btn_opencollective">OpenCollective</a>
+          </div>
+      </section>
+  
+      <section class="crypto-donations">
+          <h2 data-i18n="crypto_donations">Cryptocurrency Donations</h2>
+          <div class="medias">
+              <div class="crypto">
+                  <h3 data-i18n="btc">Bitcoin (BTC)</h3>
+                  <a href="bitcoin:bc1ql5uvqda7ndxjkcf7c2kw9vv2rcpmqsjs5xzsq3">
+                      <img class="qrcode" src="images/btc.png" alt="BTC QR Code">
+                  </a>
+              </div>
+              <div class="crypto">
+                  <h3 data-i18n="xmr">Monero (XMR)</h3>
+                  <a href="monero:89GEo1iF4CB8ALkXJgwmUCDrRkYgHnQvZgK23Q2AKBPRdXBMXXzmYQ82sSTzFkKnmePcm85153XwZ7xbukmsG4RY5GyAN9r">
+                      <img class="qrcode" src="images/xmr.png" alt="XMR QR Code">
+                  </a>
+              </div>
+          </div>
+      </section>
+  
+      <section class="contributor-support">
+          <h2 data-i18n="contributor_support">Support the Contributors</h2>
+          <div class="medias">
+              <a href="https://buymeacoffee.com/bmorcelliz" class="btn btn-custom" data-i18n="btn_bmorcelli">Donate to bmorcelli</a>
+              <a href="https://github.com/sponsors/bmorcelli" class="btn btn-custom" data-i18n="btn_github_sponsor">Sponsor on GitHub</a>
+              <a href="https://www.paypal.com/paypalme/smoochieelee" class="btn btn-custom" data-i18n="btn_smoochiee">Donate to Smoochiee (PCB Design)</a>
+          </div>
+      </section>
+  </main>
 
     <footer class="footer">
         <div class="container">
@@ -113,7 +123,7 @@
                     <img src="images/matrix.svg" alt="Matrix">
                 </a>
             </div>
-            <p class="footer-credit">Site made by <a href="https://github.com/unveroleone" target="_blank">unveroleone</a></p>
+            <p class="footer-credit" data-i18n="footer_credit">Site made by <a href="https://github.com/unveroleone" target="_blank">unveroleone</a></p>
         </div>
     </footer>
     <script src="script/flasher.js"></script>
