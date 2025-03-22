@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
 
+    let autoSlideInterval = null;
+    let autoSlideTimeout = null;
+
     function showSlide(index) {
         slides.forEach(slide => slide.classList.remove('active'));
         currentSlide = (index + slides.length) % slides.length;
@@ -10,10 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function changeSlide(direction) {
         showSlide(currentSlide + direction);
-        resetAutoSlide(); // Auto-Slide zurücksetzen
+        resetAutoSlide();
     }
 
-    // Event-Listener für die Pfeile innerhalb der Slides setzen
     slides.forEach(slide => {
         slide.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
         slide.querySelector('.next').addEventListener('click', () => changeSlide(1));
@@ -22,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function startAutoSlide() {
         if (autoSlideInterval) return;
         autoSlideInterval = setInterval(() => {
-            changeSlide(1);
+            showSlide(currentSlide + 1);
         }, 6000);
     }
 

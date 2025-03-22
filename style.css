@@ -107,6 +107,53 @@ a{
     border-bottom: 2px solid #9B51E0;
 }
 
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+}
+
+.current-lang {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+    margin-left:10px;
+}
+
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #0A0A0A;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.current-lang:hover {
+    transform: scale(1.1);
+}
+
+.lang-dropdown button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.lang-dropdown button:hover {
+    background-color: #9B51E0;
+}
 
 
 .hamburger {
@@ -879,6 +926,11 @@ esp-web-install-button button:hover {
         width: 90%;
         max-width: 400px;
         text-align: center;
+    }
+
+    .language-switcher {
+        margin-top: 10px;
+        justify-content: center;
     }
 }
 @media(min-width: 769px) and (max-width: 1200px) and (orientation: portrait) {

@@ -1,0 +1,21 @@
+{
+    "title": "Bruce Firmware",
+    "nav_home": "Accueil",
+    "nav_github": "GitHub",
+    "nav_install": "Installer",
+    "nav_discord": "Discord",
+    "nav_donate": "Faire un don",
+    "nav_boards": "Cartes",
+    "hero_title": "Bruce Firmware",
+    "hero_desc": "Le puissant firmware open-source ESP32 conçu pour la sécurité offensive et les opérations Red Team.",
+    "hero_github": "Explorer GitHub",
+    "hero_install": "Installer maintenant",
+    "features_title": "Pourquoi Bruce?",
+    "feature_open_source": "⚡ Open-Source",
+    "feature_open_source_desc": "Bruce est sous licence AGPL, ce qui le rend librement disponible pour la communauté.",
+    "feature_cross_platform": "🖥️ Multi-plateforme",
+    "feature_cross_platform_desc": "Bruce fonctionne parfaitement sur M5Stack, LilyGo et d'autres appareils basés sur ESP32.",
+    "feature_wifi_attacks": "📶 Attaques Wi-Fi",
+    "feature_wifi_attacks_desc": "Prend en charge le Beacon-Spam, les attaques Deauth, Evil Portal et plus encore.",
+    "footer_credit": "Site réalisé par <a href='https://github.com/unveroleone' target='_blank'>unveroleone</a>"
+}
