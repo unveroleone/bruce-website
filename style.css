@@ -813,6 +813,25 @@ esp-web-install-button button:hover {
     }
 }
 
+.desktop-lang {
+    display: block;
+  }
+  .mobile-lang {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-lang {
+      display: none;
+    }
+    .mobile-lang {
+      display: block;
+    }
+    .current-lang {
+      margin-left: 0;
+    }
+  }
+  
 
 @media (max-width: 768px) {
     .hamburger {
